@@ -1,3 +1,5 @@
-# vscode
-this is my git hub
-author - aditya negi
+#include<stdio.h>
+int main() [
+  printf("Hello world");
+  return 0;
+}
