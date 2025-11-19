@@ -1,0 +1,23 @@
+WAP in c to add two numbers, take number from user
+
+#include<stdio.h>
+
+int main() { 
+    int num1, num2, sum:
+
+ // prompt user for the first number
+   printf("Enter the frist number:");
+   scanf("%d", &num1);
+
+// prompt user for the second number
+printf("Enter the second number:");
+scanf("%d", &num2);
+
+// calculate 
+sum = num1 + num2;
+
+// result
+printf("The sum of %d and %d is %d.\n", num1, num2, sum);
+
+return 0;
+}
