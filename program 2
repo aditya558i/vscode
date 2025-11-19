@@ -1,0 +1,11 @@
+write a C program to print the adresss in multiple lines(new line)
+
+#include<stdio.h>
+
+int main() {
+   printf("Aditya Negi\n");
+   printf("vill todi,  Bpuram\n");
+   printf("Tehri Garhwal, uttarakhand\n");
+   printf("India\n");
+   return 0;
+ }
