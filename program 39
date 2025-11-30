@@ -1,0 +1,32 @@
+Write a program to find the product of odd digits of a number.
+
+#include <stdio.h>
+
+int main() {
+    int num, digit;
+    int product = 1;  
+    int found = 0;    // to check if any odd digit exists
+
+    printf("Enter a number: ");
+    scanf("%d", &num);
+
+    int temp = num;
+
+    while (temp != 0) {
+        digit = temp % 10;
+
+        if (digit % 2 != 0) {  // check odd digit
+            product *= digit;
+            found = 1;
+        }
+
+        temp /= 10;
+    }
+
+    if (found)
+        printf("Product of odd digits of %d is %d\n", num, product);
+    else
+        printf("No odd digits found in %d\n", num);
+
+    return 0;
+}
