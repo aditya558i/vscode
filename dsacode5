@@ -1,0 +1,46 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int p;
+    cin >> p;
+    int arr[p];
+    for (int i = 0; i < p; i++)
+    {
+        cin >> arr[i];
+    }
+
+    int q;
+    cin >> q;
+    int nums[q];
+    for (int i = 0; i < q; i++)
+    {
+        cin >> nums[i];
+    }
+    int i = 0, j = 0;
+    while (i < p && j < q)
+    {
+        if (arr[i] <= nums[j])
+        {
+            cout << arr[i] << " ";
+            i++;
+        }
+        else
+        {
+            cout << nums[j] << " ";
+            j++;
+        }
+    }
+    while (i < p)
+    {
+        cout << arr[i] << " ";
+        i++;
+    }
+    while (j < q)
+    {
+        cout << nums[j] << " ";
+        j++;
+    }
+    return 0;
+}
